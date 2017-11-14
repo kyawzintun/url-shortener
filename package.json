@@ -1,0 +1,38 @@
+{
+  "name": "fcc-url-shortener",
+  "version": "1.0.0",
+  "description": "free code camp url shortener microservice",
+  "main": "index.js",
+  "engines": {
+    "node": "8.2.1"
+  },
+  "scripts": {
+    "test": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyawzintun/url-shortener.git"
+  },
+  "keywords": [
+    "fcc",
+    "url",
+    "shortener",
+    "microservice"
+  ],
+  "author": "KZT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kyawzintun/url-shortener/issues"
+  },
+  "homepage": "https://github.com/kyawzintun/url-shortener#readme",
+  "dependencies": {
+    "cors": "2.8.4",
+    "ejs": "2.5.7",
+    "express": "4.16.2",
+    "mongoose": "4.10.8"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
