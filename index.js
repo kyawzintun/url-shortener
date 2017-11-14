@@ -83,9 +83,12 @@ function insertNew(url) {
 }
 
 function createFullUrl(req, url) {
+  if (process.env.PORT) {
+    return `${req.protocol}://${req.hostname}/${url}`;
+  }
   return `${req.protocol}://${req.hostname}:${port}/${url}`;
 }
 
 app.listen(port, function () {
   console.log('Node app is running on port', port);
-});
+}); 
